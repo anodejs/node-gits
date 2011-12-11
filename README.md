@@ -1,4 +1,4 @@
-# Yet another friendly git module for node.js with some goodies (and async)
+# gits - Yet another friendly git module for node.js with some goodies (and async)
 
 Apart from simply exposing ```git(dir, args, callback)``` there are a couple of nice utilities.
 

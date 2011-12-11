@@ -1,9 +1,9 @@
-{ "name": "git"
+{ "name": "gits"
 , "description": "A node.js git library with some cool features like synchronizing all the branches from a git remote to a local subdir"
 , "main": "./main"
 , "author": "Elad Ben-Israel"
 , "version": "0.0.1"
-, "repository" : { "type" : "git", "url" : "http://github.com/anodejs/git" }
+, "repository" : { "type" : "git", "url" : "http://github.com/anodejs/gits" }
 , "scripts": {
     "test": "../nodeunit/bin/nodeunit tests/"
 }
