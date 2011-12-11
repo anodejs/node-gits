@@ -1,10 +1,20 @@
-{ "name": "gits"
-, "description": "A node.js git library with some cool features like synchronizing all the branches from a git remote to a local subdir"
-, "main": "./main"
-, "author": "Elad Ben-Israel"
-, "version": "0.0.1"
-, "repository" : { "type" : "git", "url" : "http://github.com/anodejs/gits" }
-, "scripts": {
-    "test": "../nodeunit/bin/nodeunit tests/"
-}
+{
+    "name": "gits",
+    "description": "A node.js git library with some cool features like synchronizing all the branches from a git remote to a local subdir",
+    "main": "./main",
+    "author": "Elad Ben-Israel",
+    "version": "0.0.1",
+    "dependencies": {
+        "async": ">=0.1.15"
+    },
+    "devDependencies": {
+        "nodeunit": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/anodejs/node-gits"
+    },
+    "scripts": {
+        "test": "node_modules/nodeunit/bin/nodeunit tests/"
+    }
 }
