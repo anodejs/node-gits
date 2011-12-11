@@ -41,4 +41,19 @@ module.exports = testCase({
     		test.done();
     	});
     },
+    
+    remotes: function(test) {
+        var self = this;
+        self.gitsync.sync(self.origin, 'MyBranch', this.target, function(err) {
+            test.ok(!err, err);
+            self.gitsync.remotes(self.target, function(err, remotes) {
+                test.ok(!err, err);
+                test.ok(remotes);
+                test.ok(remotes.origin);
+                test.ok(remotes.origin.fetch);
+                test.ok(remotes.origin.push);
+                test.done(); 
+            });
+        });
+    },
 });
