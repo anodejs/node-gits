@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	ignorecase = true
+[remote "origin"]
+	url = /Users/eladb/Desktop/anode2/__apps/node_modules/gitsync/tests/testrepo

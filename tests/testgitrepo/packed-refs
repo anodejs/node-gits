@@ -1,0 +1,5 @@
+# pack-refs with: peeled 
+a295b549202ba7af3cc386b483e9624dac09079d refs/heads/master
+b5d9a17883f4b589ea23178ea0467f951f37e9fc refs/heads/MyBranch
+59953bbeac51f413339b686c54c33c4e9af1550a refs/heads/B8
+b36148c6d47489b9405bca159be8a7bd80dd1221 refs/heads/B1
