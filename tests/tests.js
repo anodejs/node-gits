@@ -44,7 +44,7 @@ module.exports = testCase({
     
     remotes: function(test) {
         var self = this;
-        self.gitsync.sync(self.origin, 'MyBranch', this.target, function(err) {
+        self.gitsync.sync(self.origin, 'MyBranch', self.target, function(err) {
             test.ok(!err, err);
             self.gitsync.remotes(self.target, function(err, remotes) {
                 test.ok(!err, err);
@@ -53,6 +53,18 @@ module.exports = testCase({
                 test.ok(remotes.origin.fetch);
                 test.ok(remotes.origin.push);
                 test.done(); 
+            });
+        });
+    },
+
+    log: function(test) {
+        var self = this;
+        self.gitsync.sync(self.origin, 'MyBranch', self.target, function(err) {
+            self.gitsync.log(self.target, {}, function(err, commits) {
+                console.log(commits);
+                test.ok(!err, JSON.stringify(err));
+                test.equals(commits.length, 4);
+                test.done();
             });
         });
     },
