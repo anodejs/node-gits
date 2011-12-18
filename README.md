@@ -5,7 +5,7 @@ Apart from simply exposing ```git(dir, args, callback)``` there are a couple of 
 ## Installation
 
 ```bash
-npm install gitsync
+npm install gits
 ```
 
 ## Usage
