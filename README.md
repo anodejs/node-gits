@@ -23,6 +23,7 @@ API:
  * ```gits.currentBranch(dir, callback)``` - returns the current branch of a directory
  * ```gits.git(dir, argsArray, callback)``` - just runs git command line
  * ```gits.remotes(dir, callback)``` - returns a hash with the remotes in the repo
+ * ```gits.log(dir, opts, callback)``` - lists all the commits under a directory
 
 ## License
 
