@@ -68,4 +68,14 @@ module.exports = testCase({
             });
         });
     },
+    
+    pruneAll: function(test) {
+      var self = this;
+      self.gitsync.bsyncAll(self.origin, self.target, "PREFIX_", function(err, results) {
+        self.gitsync.pruneAll(self.target, function(err) {
+          test.ok(!err, err);
+          test.done();
+        });
+      });
+    }
 });

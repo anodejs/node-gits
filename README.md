@@ -24,6 +24,8 @@ API:
  * ```gits.git(dir, argsArray, callback)``` - just runs git command line
  * ```gits.remotes(dir, callback)``` - returns a hash with the remotes in the repo
  * ```gits.log(dir, opts, callback)``` - lists all the commits under a directory
+ * ```gits.prune(dir, callback)``` - runs "git remote prune origin" for a directory
+ * ```gits.pruneAll(basrDir, callback)``` - runs "git remote prune origin" against all subdirectories of "baseDir"
 
 ## License
 

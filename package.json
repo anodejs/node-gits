@@ -3,7 +3,7 @@
     "description": "A node.js git library with some cool features like synchronizing all the branches from a git remote to a local subdir",
     "main": "./main",
     "author": "Elad Ben-Israel",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "dependencies": {
         "async": ">=0.1.15"
     },
@@ -15,6 +15,6 @@
         "url": "http://github.com/anodejs/node-gits"
     },
     "scripts": {
-        "test": "node_modules/nodeunit/bin/nodeunit tests/"
+        "test": "nodeunit tests/"
     }
 }
