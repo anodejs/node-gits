@@ -3,7 +3,11 @@
     "description": "A node.js git library with some cool features like synchronizing all the branches from a git remote to a local subdir",
     "main": "./main",
     "author": "Elad Ben-Israel",
-    "version": "0.0.3",
+    "contributors": [
+        "Elad Ben-Israel",
+        "Yosef Dinerstein"
+    ],
+    "version": "0.0.4",
     "dependencies": {
         "async": ">=0.1.15"
     },
