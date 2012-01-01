@@ -39,6 +39,7 @@ module.exports = testCase({
             // sync again.
             self.gitsync.sync(self.origin, 'MyBranch', self.target, function (err, results) {
                 test.ok(!err, err);
+                test.ok(!results.err, results.err);
                 test.done();
             });
         });
