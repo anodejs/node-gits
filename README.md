@@ -16,7 +16,7 @@ var gits = require('gits');
 
 API:
 
- * ```gits.pull(dir, callback)``` - runs git reset, recovery commands and git pull in a directory
+ * ```gits.align(dir, callback)``` - runs git reset, recovery commands and git pull in a directory
  * ```gits.sync(origin, branch, dir, callback)``` - clones/pulls origin/branch into dir
  * ```gits.bsync(origin, target, branches, prefix, callback)``` - clones multiple branches (or all if branches is null) from origin into subdirectories under target dir. 'prefix' is prepended to subdirectory names
  * ```gits.bsyncAll(origin, target, prefix, callback)``` - clones all branches from origin into target

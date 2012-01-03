@@ -7,7 +7,7 @@
         "Elad Ben-Israel",
         "Yosef Dinerstein"
     ],
-    "version": "0.0.4",
+    "version": "0.1.0",
     "dependencies": {
         "async": ">=0.1.15"
     },
