@@ -19,6 +19,6 @@
         "url": "http://github.com/anodejs/node-gits"
     },
     "scripts": {
-        "test": "nodeunit tests/"
+        "test": "nodeunit tests/*.js"
     }
 }
