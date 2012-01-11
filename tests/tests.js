@@ -41,8 +41,8 @@ module.exports = testCase({
 
                 // The merged branches list must at least contain the branch itself
                 var found = false;
-                branches.forEach(function(branch) {
-                    if (branch.toLowerCase() === 'MyBranch'.toLowerCase()){
+                branches.forEach(function (branch) {
+                    if (branch.toLowerCase() === 'MyBranch'.toLowerCase()) {
                         found = true;
                     }
                 });

@@ -1,5 +1,7 @@
 # gits - Yet another friendly git module for node.js with some goodies (and async)
 
+[![Build Status](https://secure.travis-ci.org/anodejs/node-gits.png)](http://travis-ci.org/anodejs/node-gits)
+
 Apart from simply exposing ```git(dir, args, callback)``` there are a couple of nice utilities.
 
 ## Installation
