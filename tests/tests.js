@@ -32,6 +32,26 @@ module.exports = testCase({
         });
     },
 
+    mergedBranches: function (test) {
+        var self = this;
+        self.gitsync.sync(self.origin, 'MyBranch', this.target, function (err) {
+            test.ok(!err, err);
+            self.gitsync.mergedBranches(self.target, 'MyBranch', function (err, branches) {
+                test.ok(!err, err);
+
+                // The merged branches list must at least contain the branch itself
+                var found = false;
+                branches.forEach(function(branch) {
+                    if (branch.toLowerCase() === 'MyBranch'.toLowerCase()){
+                        found = true;
+                    }
+                });
+                test.ok(found, 'Failed to validate merged branches');
+                test.done();
+            });
+        });
+    },
+
     resync: function (test) {
         var self = this;
         self.gitsync.sync(self.origin, 'MyBranch', self.target, function (err) {
