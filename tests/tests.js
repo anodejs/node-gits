@@ -90,7 +90,6 @@ module.exports = testCase({
         });
     },
 
-// Fails on travis
     log: function (test) {
         var self = this;
         self.gitsync.sync(self.origin, 'MyBranch', self.target, function (err) {
