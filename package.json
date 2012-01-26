@@ -8,7 +8,7 @@
         "Yosef Dinerstein",
         "Gilad Oren"
     ],
-    "version": "0.1.3",
+    "version": "0.1.4",
     "dependencies": {
         "async": ">=0.1.15"
     },
