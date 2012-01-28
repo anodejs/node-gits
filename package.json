@@ -8,9 +8,10 @@
         "Yosef Dinerstein",
         "Gilad Oren"
     ],
-    "version": "0.1.4",
+    "version": "0.1.5",
     "dependencies": {
-        "async": ">=0.1.15"
+        "async": ">=0.1.15",
+        "rimraf": "1.0.x"
     },
     "devDependencies": {
         "nodeunit": "*"
