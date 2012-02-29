@@ -23,7 +23,7 @@ API:
  * ```gits.bsync(origin, target, branches, prefix, callback)``` - clones multiple branches (or all if branches is null) from origin into subdirectories under target dir. 'prefix' is prepended to subdirectory names
  * ```gits.bsyncAll(origin, target, prefix, callback)``` - clones all branches from origin into target
  * ```gits.currentBranch(dir, callback)``` - returns the current branch of a directory
- * ```gits.git(dir, argsArray, callback)``` - just runs git command line
+ * ```gits.git(dir, argsArray, callback, [logger])``` - just runs git command line
  * ```gits.remotes(dir, callback)``` - returns a hash with the remotes in the repo
  * ```gits.log(dir, opts, callback)``` - lists all the commits under a directory
  * ```gits.prune(dir, callback)``` - runs "git remote prune origin" for a directory
